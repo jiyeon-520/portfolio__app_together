@@ -1,58 +1,91 @@
 html {
   scroll-behavior: smooth;
-  user-select:none;
+  user-select: none;
 }
+
 .con {
   width: 1920px;
 }
-@media ( min-width:1900px ) {
+
+@media (min-width:1900px) {
   body {
-    overflow-x:hidden;
-    background-color:#fffbf5;
+    overflow-x: hidden;
+    background-color: #fffbf5;
   }
 }
+
 /*cover*/
-.move1{
+.move1 {
   animation: motion 2s linear infinite alternate;
 }
-@keyframes motion{
-  0% {margin-top: 0px;}
-  100%{margin-top:20px;
-    transform:rotate(30deg);}
+
+@keyframes motion {
+  0% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: 20px;
+    transform: rotate(30deg);
+  }
 }
-.move2{
+
+.move2 {
   animation: motion2 2s linear infinite alternate;
 }
-@keyframes motion2{
-  0% {margin-top: 0px;}
-  100%{margin-top:20px;transform:rotate(-30deg);}
+
+@keyframes motion2 {
+  0% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: 20px;
+    transform: rotate(-30deg);
+  }
 }
-.move3{
+
+.move3 {
   animation: motion3 2s linear infinite alternate;
 }
-@keyframes motion3{
-  0% {margin-top: 0px;}
-  100%{margin-top:20px;transform:rotate(10deg);}
+
+@keyframes motion3 {
+  0% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: 20px;
+    transform: rotate(10deg);
+  }
 }
-.move4{
+
+.move4 {
   animation: motion4 2s linear infinite alternate;
 }
-@keyframes motion4{
-  0% {margin-top: 0px;}
-  100%{margin-top:20px;transform:rotate(-10deg);}
+
+@keyframes motion4 {
+  0% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: 20px;
+    transform: rotate(-10deg);
+  }
 }
 
 /*wire frame*/
-.wireframe__img{ 
-  height:1240px;
-   width:1920px;
+.wireframe__img {
+  height: 1240px;
+  width: 1920px;
   background-size: 140%;
-  object-fit:contain;
-  background-position-x:-253px;
-  background-position-y:-500px;
-  background-image:url(https://raw.githubusercontent.com/nemone517/test/main/5%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.png);
-animation-name: frame;
-    animation-duration: 3000s;
+  object-fit: contain;
+  background-position-x: -253px;
+  background-position-y: -500px;
+  background-image: url(https://raw.githubusercontent.com/nemone517/test/main/5%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.png);
+  animation-name: frame;
+  animation-duration: 3000s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: alternate;
@@ -60,60 +93,122 @@ animation-name: frame;
 
 @keyframes frame {
   0% {
-    background-position:0 center;
+    background-position: 0 center;
   }
-  
+
   100% {
-    background-position:-10000% center;
+    background-position: -10000% center;
   }
 }
 
-  /*on boarding*/
-.onboarding:hover .slide-l{
+/*on boarding*/
+.onboarding:hover .slide-l {
   animation: slide1 1s linear alternate;
 }
-@keyframes slide1{
-  0% {left: 780px;}
-  100%{left:325px;}
+
+@keyframes slide1 {
+  0% {
+    left: 780px;
+  }
+
+  100% {
+    left: 325px;
+  }
 }
-.onboarding:hover .slide-r{
+
+.onboarding:hover .slide-r {
   animation: slide2 1s linear alternate;
 }
-@keyframes slide2{
-  0% {left: 780px;}
-  100%{left:1250px;}
-}
-  
-  /*main-1*/
 
-.tiny{
+@keyframes slide2 {
+  0% {
+    left: 780px;
+  }
+
+  100% {
+    left: 1250px;
+  }
+}
+
+/*main-1*/
+
+.tiny {
   animation: tiny 1.7s linear infinite alternate;
 }
-@keyframes tiny{
-  0% {margin-top: 0px;}
-  100%{margin-top:10px;
-    transform:rotate(40deg);}
+
+@keyframes tiny {
+  0% {
+    margin-top: 0px;
   }
-.main-1__img-tiny-1,.main-1__img-tiny-3,.main-1__img-tiny-5,.main-1__img-tiny-7,.main-1__img-tiny-9,.main-1__img-tiny-11,.main-1__img-tiny-13{
-  animation-delay:.5s;
+
+  100% {
+    margin-top: 10px;
+    transform: rotate(40deg);
+  }
+}
+
+.main-1__img-tiny-1,
+.main-1__img-tiny-3,
+.main-1__img-tiny-5,
+.main-1__img-tiny-7,
+.main-1__img-tiny-9,
+.main-1__img-tiny-11,
+.main-1__img-tiny-13 {
+  animation-delay: .5s;
 }
 
 /*main-2*/
-.main-2__img-bounce{
- --animation-iteration-count:infinite;
+.main-2__img-bounce {
+  --animation-iteration-count: infinite;
 }
-.main-2__img-tiny-1,.main-2__img-tiny-3,.main-2__img-tiny-5{
- animation-delay:.5s;
+
+.main-2__img-tiny-1,
+.main-2__img-tiny-3,
+.main-2__img-tiny-5 {
+  animation-delay: .5s;
 }
-.recipe__img-tiny-1,.recipe__img-tiny-3,.recipe__img-tiny-5,.recipe__img-tiny-7,.recipe__img-tiny-9,.recipe__img-tiny-11,.recipe__img-tiny-13,.recipe__img-tiny-15,.recipe__img-tiny-17,.recipe__img-tiny-19,.recipe__img-tiny-21,.recipe__img-tiny-23{
-  animation-delay:.5s;
+
+.recipe__img-tiny-1,
+.recipe__img-tiny-3,
+.recipe__img-tiny-5,
+.recipe__img-tiny-7,
+.recipe__img-tiny-9,
+.recipe__img-tiny-11,
+.recipe__img-tiny-13,
+.recipe__img-tiny-15,
+.recipe__img-tiny-17,
+.recipe__img-tiny-19,
+.recipe__img-tiny-21,
+.recipe__img-tiny-23 {
+  animation-delay: .5s;
 }
-.shopping__img-tiny-1,.shopping__img-tiny-3,.shopping__img-tiny-5,.shopping__img-tiny-7,.shopping__img-tiny-9,.shopping__img-tiny-11{
-  animation-delay:.5s;
+
+.shopping__img-tiny-1,
+.shopping__img-tiny-3,
+.shopping__img-tiny-5,
+.shopping__img-tiny-7,
+.shopping__img-tiny-9,
+.shopping__img-tiny-11 {
+  animation-delay: .5s;
 }
-.cummunity__img-tiny-1,.cummunity__img-tiny-3,.cummunity__img-tiny-5,.cummunity__img-tiny-7,.cummunity__img-tiny-9,.cummunity__img-tiny-11,.cummunity__img-tiny-13,.cummunity__img-tiny-15{
-  animation-delay:.5s;
+
+.cummunity__img-tiny-1,
+.cummunity__img-tiny-3,
+.cummunity__img-tiny-5,
+.cummunity__img-tiny-7,
+.cummunity__img-tiny-9,
+.cummunity__img-tiny-11,
+.cummunity__img-tiny-13,
+.cummunity__img-tiny-15 {
+  animation-delay: .5s;
 }
-.mypage__img-tiny-1,.mypage__img-tiny-3,.mypage__img-tiny-5,.mypage__img-tiny-7,.mypage__img-tiny-9,.mypage__img-tiny-11,.mypage__img-tiny-13{
-  animation-delay:.5s;
+
+.mypage__img-tiny-1,
+.mypage__img-tiny-3,
+.mypage__img-tiny-5,
+.mypage__img-tiny-7,
+.mypage__img-tiny-9,
+.mypage__img-tiny-11,
+.mypage__img-tiny-13 {
+  animation-delay: .5s;
 }
