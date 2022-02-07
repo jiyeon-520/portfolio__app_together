@@ -3,6 +3,10 @@ html {
   user-select: none;
 }
 
+body {
+  height: 100vh;
+}
+
 .con {
   width: 1920px;
 }
@@ -12,6 +16,12 @@ html {
     overflow-x: hidden;
     background-color: #fffbf5;
   }
+}
+
+html>body .scrollbar-thumb {
+  background-color: rgba(180, 180, 180, .5);
+  width: 5px;
+  border-radius: 5px;
 }
 
 /*cover*/
