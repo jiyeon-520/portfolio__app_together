@@ -177,7 +177,7 @@ body {
 
 /*main-2*/
 .main-2__img-bounce {
-  --animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 .main-2__img-tiny-1,
