@@ -1,2 +1,2 @@
-# blog
-지연 블로그
+# portfolio__app_together
+투개더
