@@ -44,7 +44,7 @@ body {
   display: flex;
   align-items:center;
   justify-content:center;
-  z-index:1000;
+  z-index:100;
 }
 .loader{
   width:30px;
@@ -55,7 +55,7 @@ body {
   position:absolute;
   top:50%;
   left:50%;
-  z-index: 5000;
+  z-index: 500;
   transform:translate(-50%, -50%);
   animation:load 1s linear infinite;
   animation-duration: 1s;
@@ -134,7 +134,7 @@ body {
 .wireframe__img {
   height: 1240px;
   width: 1920px;
-  background-size: 140%;
+  background-size: 120%;
   object-fit: contain;
   background-position-x: -253px;
   background-position-y: -500px;
@@ -152,7 +152,7 @@ body {
   }
 
   100% {
-    background-position: -10000% center;
+    background-position: 10000% center;
   }
 }
 
