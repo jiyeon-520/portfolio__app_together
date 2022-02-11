@@ -58,6 +58,7 @@ body {
   z-index: 5000;
   transform:translate(-50%, -50%);
   animation:load 1s linear infinite;
+  animation-duration: 1s;
 }
 @keyframes load {
   0% {
