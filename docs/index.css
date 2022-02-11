@@ -35,9 +35,12 @@ body {
 
 /*loading*/
 .loading{
-  width:100vw;
+  width:1920px;
+  margin:0 auto;
   height:100vh;
-  background-color:#fffbf5;
+  background-color:#ffd046;
+  position:relative;
+  z-index: 50;
 }
 .loader {
   border: 8px solid rgba(255,255,255,1);
@@ -45,12 +48,13 @@ body {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  animation: load .7s linear infinite;
+  animation: load 1s linear infinite;
+  animation-duration: 1s;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index:1000;
+  z-index:100;
 }
 
 @keyframes load {
