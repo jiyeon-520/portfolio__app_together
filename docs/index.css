@@ -138,7 +138,7 @@ body {
   object-fit: contain;
   background-position-x: -253px;
   background-position-y: -500px;
-  background-image: url(https://raw.githubusercontent.com/nemone517/test/main/5%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/jiyeon520/portfolio__app_together/docs/img/wireframe__img-bg.png);
   animation-name: frame;
   animation-duration: 3000s;
   animation-iteration-count: infinite;
