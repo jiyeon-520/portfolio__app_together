@@ -18,6 +18,7 @@ body {
   }
 }
 
+/*scrollbar*/
 ::-webkit-scrollbar-track {
   background-color: #f5f5f5;
 }
@@ -30,6 +31,35 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: #ffd046;
   border-radius: 4px;
+}
+
+/*loading*/
+.loading{
+  width:100vw;
+  height:100vh;
+  background-color:#fffbf5;
+}
+.loader {
+  border: 8px solid rgba(255,255,255,1);
+  border-top: 8px solid #ffd046;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: load .7s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:1000;
+}
+
+@keyframes load {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 /*cover*/
