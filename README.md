@@ -1,2 +1,2 @@
-# portfolio__app_together
-지연
+# blog
+지연 블로그
