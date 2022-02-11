@@ -35,28 +35,30 @@ body {
 
 /*loading*/
 .loading{
-  width:1920px;
-  margin:0 auto;
-  height:100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
   background-color:#ffd046;
-  position:relative;
-  z-index: 50;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  z-index:1000;
 }
-.loader {
-  border: 8px solid rgba(255,255,255,1);
-  border-top: 8px solid #ffd046;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  animation: load 1s linear infinite;
-  animation-duration: 2s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index:100;
+.loader{
+  width:30px;
+  height:30px;
+  border-radius :50%;
+  border:8px solid white;
+  border-top:8px solid #ffd046;
+  position:absolute;
+  top:50%;
+  left:50%;
+  z-index: 5000;
+  transform:translate(-50%, -50%);
+  animation:load 1s linear infinite;
 }
-
 @keyframes load {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
