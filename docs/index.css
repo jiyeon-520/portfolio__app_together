@@ -133,7 +133,7 @@ body {
 /*wire frame*/
 .wireframe__img {
   height: 1240px;
-  width: 1920px;
+  width:1920px;
   background-size: 120%;
   object-fit: contain;
   background-position-x: -253px;
