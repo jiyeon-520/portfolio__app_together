@@ -86,7 +86,7 @@ body {
 }
 
 .move2 {
-  animation: motion2 2s linear infinite alternate;
+  animation: motion2 1.7s linear infinite alternate;
 }
 
 @keyframes motion2 {
@@ -101,7 +101,7 @@ body {
 }
 
 .move3 {
-  animation: motion3 2s linear infinite alternate;
+  animation: motion3 1.7s linear infinite alternate;
 }
 
 @keyframes motion3 {
@@ -116,7 +116,7 @@ body {
 }
 
 .move4 {
-  animation: motion4 2s linear infinite alternate;
+  animation: motion4 1.7s linear infinite alternate;
 }
 
 @keyframes motion4 {
@@ -152,7 +152,7 @@ body {
   }
 
   100% {
-    background-position: 10000% center;
+    background-position: 12000% center;
   }
 }
 
@@ -188,7 +188,7 @@ body {
 /*main-1*/
 
 .tiny {
-  animation: tiny 1.7s linear infinite alternate;
+  animation: tiny 1.5s linear infinite alternate;
 }
 
 @keyframes tiny {
@@ -222,7 +222,7 @@ body {
 .main-2__img-tiny-5 {
   animation-delay: .5s;
 }
-
+/*recipe*/
 .recipe__img-tiny-1,
 .recipe__img-tiny-3,
 .recipe__img-tiny-5,
@@ -237,7 +237,7 @@ body {
 .recipe__img-tiny-23 {
   animation-delay: .5s;
 }
-
+/*shopping*/
 .shopping__img-tiny-1,
 .shopping__img-tiny-3,
 .shopping__img-tiny-5,
@@ -246,7 +246,7 @@ body {
 .shopping__img-tiny-11 {
   animation-delay: .5s;
 }
-
+/*cummunity*/
 .cummunity__img-tiny-1,
 .cummunity__img-tiny-3,
 .cummunity__img-tiny-5,
@@ -257,7 +257,7 @@ body {
 .cummunity__img-tiny-15 {
   animation-delay: .5s;
 }
-
+/*mypage*/
 .mypage__img-tiny-1,
 .mypage__img-tiny-3,
 .mypage__img-tiny-5,
