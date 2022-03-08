@@ -1,266 +1,529 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-  <title>투개더</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | 포시즌스</title>
+    <!--테일윈드-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <!--제이쿼리-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--폰트어썸-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--스와이퍼-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+    <!--스와이퍼-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <scrip src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="common.css">
+    <script src="common.js"></script>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    
 </head>
 <body>
-<!-- loading -->
-
-
-  <!-- cover -->
-<section class="con mx-auto" style="background-color:#FFD046; position:relative; height:1000px;">
-  <div class="loading">
-    <span class="loader"></span>
-  </div>
-  <div class="cover w-full wow slideInUp overflow-hidden" style="height:1000px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/cover__img-bg.png" alt="" class="cover__img-bg">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/cover__img-move-roll.png" alt="" class="cover__img-move-roll opacity-75 move2" style="position:absolute; top:686px; left:561px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/cover__img-move-bag.png" alt="" class="cover__img-move-bag opacity-75 move2" style="position:absolute; top:648px; left:247px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/cover__img-move-orange.png" alt="" class="cover__img-move-orange opacity-75 move3" style="position:absolute; top:921.7px; left:504.7px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/cover__img-move-cupcake.png" alt="" class="cover__img-move-cupcake opacity-75 move1" style="position:absolute; top:857.3px; left:294px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/cover__img-move-jelly.png" alt="" class="cover__img-move-jelly opacity-75 move3" style="position:absolute; top:784.3px; left:123px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/cover__img-move-carrotcake.png" alt="" class="cover__img-move-carrotcake opacity-75 move3" style="position:absolute; top:654.3px; left:305px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/cover__img-move-abocado.png" alt="" class="cover__img-move-abocado opacity-75 move4" style="position:absolute; top:865px; left:0px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/cover__img-move-pizza.png" alt="" class="cover__img-move-pizza opacity-75 move1" style="position:absolute; top:615px; left:0px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/cover__img-move-egg.png" alt="" class="cover__img-move-egg opacity-75 move1" style="position:absolute; top:477px; left:342px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/cover__img-move-vegetable.png" alt="" class="cover__img-move-vegetable opacity-75 move4" style="position:absolute; top:502px; left:84.6px;">
-</div>
-</section>
-
-<!-- overview -->
-<section class="con mx-auto">
-  <div class="overview relative w-full" style="margin-top:-1px; height:1000px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/overview__img-bg.png" alt="" class="overview__img-bg">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/overview__img-phone.png" alt="" class="overview__img-phone wow animate__fadeInUp" style="position:absolute; bottom:0; left:430px;">
-  </div>
-</section>
-
-<!-- background story -->
-<section class="con mx-auto">
-  <div class="bgstory w-full relative" style="margin-top:-1px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/bgstory.png" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700" data-aos-offset="0" data-aos-anchor-placement="center-bottom" alt="">
-  </div>
-</section>
-
-<!-- style guide -->
-<section class="con mx-auto">
-<div class="styleguide w-full relative" style="margin-top:-1px;">
-<img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/styleguide__img-bg.png" alt="" class="styleguide__img-bg">
-  
-<!-- 컬러 -->
-<img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/styleguide__img-text-1.png" alt="" data-aos="fade-left" data-aos-offset="100" data-aos-duration="600" data-aos-easing="ease-in-sine" class="styleguide__img-text-1" style="position:absolute; top:531px; left:1157px;">
-<!-- 폰트-->
-<img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/styleguide__img-text-2.png" alt="" data-aos="fade-right" data-aos-offset="100" data-aos-duration="600" data-aos-easing="ease-in-sine" class="styleguide__img-text-2" style="position:absolute; top:1132px; left:145px;">
-<img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/styleguide__img-card-가.png" alt="" class="absolute" data-aos="flip-down" data-aos-delay="200" style="top:1070px; left:885px;">
-<img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/styleguide__img-card-나.png" alt="" class="absolute" data-aos="flip-down" data-aos-delay="500" style="top:1070px; left:1205px;">
-<img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/styleguide__img-card-다.png" alt="" class="absolute" data-aos="flip-down" data-aos-delay="800" style="top:1070px; left:1525px;">
-<!-- 로고-->
-<img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/styleguide__img-text-3.png" alt="" data-aos="fade-left" data-aos-offset="100" data-aos-duration="600" data-aos-easing="ease-in-sine" class="styleguide__img-text-3" style="position:absolute; top:1620px; left:1089px;">
-  </div>
-    </section>
-
-<!-- wire frame -->
-<section class="con mx-auto">
-<div class="wireframe w-full relative" style="height:1240px; background-color:#FFFBF5; margin-top:-1px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/wireframe__img-box-top.png" alt="" class="wireframe__img-box absolute" style="z-index:20; top:0;">
-<div class="wireframe__img absolute" style="width:1920px;"></div>
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/wireframe__img-box-bottom.png" alt="" class="wireframe__img-box absolute" style="top:1010px;">
- </div>
-    </section>
-
-<!-- onboarding -->
-<section class="con mx-auto">
-<div class="onboarding w-full relative" style="margin-top:-1px; z-index:100;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/onboarding__img-bg.png" alt="" class="onboarding__img-bg">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/onboarding__img-left.png" alt="" class="onboarding__img-left slide-l" style="position:absolute; top:335px; left:325px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/onboarding__img-center.png" alt="" class="onboarding__img-center " style="position:absolute; top:174px; left:770px; z-index:1;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/onboarding__img-right.png" alt="" class="onboarding__img-right slide-r" style="position:absolute; top:335px; left:1250px;">  
- </div>
-    </section>
-
-  <!---- main ---->
-<section class="con mx-auto">
-<div class="main-1 w-full relative"style="margin-top:-1px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-1__img-bg.png" alt="" class="main-1__img-bg">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-1__img-phone-1.png" alt="" class="main-1__img-phone-1 absolute" style="top:593px; left:732px; z-index:2;" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-1__img-phone-2.png" alt="" class="main-1__img-phone-2 absolute" style="top:638px; left:1058px;" data-aos="fade-right" data-aos-delay="500" data-aos-duration="800">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-1__img-line.png" alt="" class="main-1__img-line absolute wow animate__fadeIn" style="top:1100px; left:953px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-1__img-popup.png" alt="" class="main-1__img-popup absolute" style="top:946px; left:1620px; width:250px;" data-aos="zoom-in-up" data-aos-delay="700">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-1__img-tiny-1.png" alt="" class="main-1__img-tiny-1 tiny absolute wow" style="top:-20px; left:479px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-1__img-tiny-2.png" alt="" class="main-1__img-tiny-2 tiny absolute wow" style="top:0; left:524px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-1__img-tiny-3.png" alt="" class="main-1__img-tiny-3 tiny absolute wow" style="top:166px; left:1659px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-1__img-tiny-4.png" alt="" class="main-1__img-tiny-4 tiny absolute wow" style="top:189px; left:1723px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-1__img-tiny-5.png" alt="" class="main-1__img-tiny-5 tiny absolute wow" style="top:208.8px; left:1639.8px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-1__img-tiny-6.png" alt="" class="main-1__img-tiny-6 tiny absolute wow" style="top:437px; left:809px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-1__img-tiny-7.png" alt="" class="main-1__img-tiny-7 tiny absolute wow" style="top:427.7px; left:826.1px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-1__img-tiny-8.png" alt="" class="main-1__img-tiny-8 tiny absolute wow" style="top:404px; left:708px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-1__img-tiny-9.png" alt="" class="main-1__img-tiny-9 tiny absolute wow" style="top:1327px; left:144.5px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-1__img-tiny-10.png" alt="" class="main-1__img-tiny-10 tiny absolute wow" style="top:1394.7px; left:143px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-1__img-tiny-11.png" alt="" class="main-1__img-tiny-11 tiny absolute wow" style="top:1472px; left:1794px;">
-      <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-1__img-tiny-12.png" alt="" class="main-1__img-tiny-12 tiny absolute wow" style="top:1492px; left:1789px;">
-      <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-1__img-tiny-13.png" alt="" class="main-1__img-tiny-13 tiny absolute wow" style="top:1510px; left:1809px;">
-</div>
-    </section>
-<section class="con mx-auto">
-<div class="main-2 w-full relative"style="margin-top:-1px;">
-<img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-2__img-bg.png" alt="" class="main-2__img-bg w-full"> 
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-2__img-phone-1.png" alt="" class="main-2__img-phone-1" style="position:absolute; top:200px; left:200px; z-index:20;" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-2__img-phone-2.png" alt="" class="main-2__img-phone-2" style="position:absolute; top:200px; left:749px; z-index:10;" data-aos="fade-right"  data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="500">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-2__img-bounce.png" alt="" class="main-2__img-bounce wow animate__bounceIn" style="position:absolute; top:945px; left:1428px;" data-wow-duration="3s">
-      <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-2__img-tiny-1.png" alt="" class="main-2__img-tiny-1 tiny absolute" style="top:1206px; left:66px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-2__img-tiny-2.png" alt="" class="main-2__img-tiny-2 tiny absolute" style="top:1191px; left:110px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-2__img-tiny-3.png" alt="" class="main-2__img-tiny-3 tiny absolute" style="top:1181px; left:130px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-2__img-tiny-4.png" alt="" class="main-2__img-tiny-4 tiny absolute" style="top:504px; left:1723px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-2__img-tiny-5.png" alt="" class="main-2__img-tiny-5 tiny absolute" style="top:513px; left:1764px;">
- <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/main-2__img-tiny-6.png" alt="" class="main-2__img-tiny-6 tiny absolute" style="top:487px; left:1709px;">
-</div>
-    </section>
-
-<!-- recipe -->
-<section class="con mx-auto">
-<div class="recipe w-full relative" style="margin-top:-1px; overflow:hidden">
-  <img class="recipe__img-bg w-full" src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-bg.png" alt="">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-yellow-1.png" alt="" class="recipe__img-yellow-1 absolute mousemove-effect-1-el" data-mousemove-effect1-hor-res="-0.03" data-mousemove-effect1-ver-res="-0.03" style="top:117px; left:960.78px; z-index:1;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-yellow-2.png" alt="" class="recipe__img-yellow-2 absolute mousemove-effect-1-el" data-mousemove-effect1-hor-res="0.05" data-mousemove-effect1-ver-res="0.01" style="top:600.16px; left:-408px; z-index:1;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-yellow-3.png" alt="" class="recipe__img-yellow-3 absolute mousemove-effect-1-el" data-mousemove-effect1-hor-res="-0.03" data-mousemove-effect1-ver-res="-0.07" style="top:1807px; left:870px; z-index:1;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-phone-1.png" alt="" class="recipe__img-phone-1 absolute" style="top:130px; left:1193px; z-index:5;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-phone-2.png" alt="" class="recipe__img-phone-2 absolute" style="top:1136px; left:270px; z-index:5;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-phone-3.png" alt="" class="recipe__img-phone-3 absolute" style="top:2275px; left:1206px; z-index:5;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-line.png" alt="" data-aos="fade-in" data-aos-offset="100" class="absolute recipe__img-line" style="top:446px; left:1012px; z-index:10; width:220px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-popup.png" alt="" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="300" class="absolute recipe__img-popup" style="top:281px; left:877px; z-index:15; width:290px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-text-1.png" alt="" data-aos="fade-right" data-aos-delay="800" class="absolute recipe__img-text-1" style="top:680px; left:279px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-text-2.png" alt="" data-aos="fade-left" class="absolute recipe__img-text-2" style="top:1622px; left:1135px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-text-3.png" alt="" data-aos="fade-right" class="absolute recipe__img-text-3" style="top:2953px; left:279px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-1.png" alt="" class="absolute recipe__img-tiny-1 tiny" style="top:0px; left:659px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-2.png" alt="" class="absolute recipe__img-tiny-2 tiny" style="top:37px; left:769px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-3.png" alt="" class="absolute recipe__img-tiny-3 tiny" style="top:68px; left:734px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-4.png" alt="" class="absolute recipe__img-tiny-4 tiny" style="top:376px; left:1709px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-5.png" alt="" class="absolute recipe__img-tiny-5 tiny" style="top:452px; left:1690px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-6.png" alt="" class="absolute recipe__img-tiny-6 tiny" style="top:458px; left:1765px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-7.png" alt="" class="absolute recipe__img-tiny-7 tiny" style="top:1331px; left:53px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-8.png" alt="" class="absolute recipe__img-tiny-8 tiny" style="top:1415px; left:139px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-9.png" alt="" class="absolute recipe__img-tiny-9 tiny" style="top:1351px; left:1746px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-10.png" alt="" class="absolute recipe__img-tiny-10 tiny" style="top:1455px; left:1774px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-11.png" alt="" class="absolute recipe__img-tiny-11 tiny" style="top:1499px; left:1690px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-12.png" alt="" class="absolute recipe__img-tiny-12 tiny" style="top:1807px; left:953px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-13.png" alt="" class="absolute recipe__img-tiny-13 tiny" style="top:1838px; left:902px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-14.png" alt="" class="absolute recipe__img-tiny-14 tiny" style="top:2232px; left:1701px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-15.png" alt="" class="absolute recipe__img-tiny-15 tiny" style="top:2548px; left:289px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-16.png" alt="" class="absolute recipe__img-tiny-16 tiny" style="top:2594px; left:156px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-17.png" alt="" class="absolute recipe__img-tiny-17 tiny" style="top:2747px; left:372px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-18.png" alt="" class="absolute recipe__img-tiny-18 tiny" style="top:2806px; left:1825px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-19.png" alt="" class="absolute recipe__img-tiny-19 tiny" style="top:2788px; left:1845px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-20.png" alt="" class="absolute recipe__img-tiny-20 tiny" style="top:2713px; left:1893px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-21.png" alt="" class="absolute recipe__img-tiny-21 tiny" style="top:3152px; left:34px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-22.png" alt="" class="absolute recipe__img-tiny-22 tiny" style="top:3221px; left:72px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-23.png" alt="" class="absolute recipe__img-tiny-23 tiny" style="top:3154px; left:1135px; z-index:50;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image/recipe__img-tiny-24.png" alt="" class="absolute recipe__img-tiny-24 tiny" style="top:3210px; left:1121px; z-index:50;">
-</div>
-</section>
-
-<!---- search ---->
-<section class="con mx-auto">
-  <div class="search w-full" style="position:relative; margin-top:-1px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/search__img-bg.png" alt="" class="search__img-bg w-full">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/search__img-phone-1.png" alt="" class="search__img-phone-1" style="position:absolute; top:100px; left:1342px;" data-aos="fade-down" data-aos-delay="300" data-aos-duration="800">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/search__img-phone-2.png" alt="" class="search__img-phone-2" style="position:absolute; top:730px; left:850px;" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
-      <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/search__img-text.png" alt="" class="search__img-text" style="position:absolute; top:464px; left:170px;" data-aos="fade-right">
-      <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/search__img-popup.png" alt="" class="search__img-popup" style="position:absolute; top:780px; left:402px; z-index:10;" data-aos="fade-in" data-aos-offset="300" data-aos-delay="900">
-        <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/search__img-line.png" alt="" class="search__img-line" style="position:absolute; top:959px; left:538px;" data-aos="fade-in"data-aos-offset="100" data-aos-delay="700">
-</div>
-</section>
-
-<!-- shopping-->
-<section class="con mx-auto">
-<div class="shopping w-full relative overflow-hidden" style="margin-top:-1px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/shopping__img-bg.png" alt="" class="shopping__img-bg w-full">
-<img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/shopping__img-phone-1.png" alt="" data-aos="fade-right" class="shopping__img-phone-1 absolute" style="top:223px; left:100px; z-index:10;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/shopping__img-phone-2.png" alt="" data-aos="fade-right" data-aos-delay="500" class="shopping__img-phone-2 absolute" style="top:286px; left:576px; z-index:5;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/shopping__img-tiny-1.png" alt="" class="shopping__img-tiny-1 tiny absolute" style="top:447px; left:1065px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/shopping__img-tiny-2.png" alt="" class="shopping__img-tiny-2 tiny absolute" style="top:262px; left:1420px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/shopping__img-tiny-3.png" alt="" class="shopping__img-tiny-3 tiny absolute" style="top:150px; left:1840px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/shopping__img-tiny-4.png" alt="" class="shopping__img-tiny-4 tiny absolute" style="top:475px; left:1732px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/shopping__img-tiny-5.png" alt="" class="shopping__img-tiny-5 tiny absolute" style="top:627px; left:1440px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/shopping__img-tiny-6.png" alt="" class="shopping__img-tiny-6 tiny absolute" style="top:709px; left:915px; z-index:0;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/shopping__img-tiny-7.png" alt="" class="shopping__img-tiny-7 tiny absolute" style="top:805px; right:0px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/shopping__img-tiny-8.png" alt="" class="shopping__img-tiny-8 tiny absolute" style="top:1016px; left:1199px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/shopping__img-tiny-9.png" alt="" class="shopping__img-tiny-9 tiny absolute" style="top:1098.72px; left:1712px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/shopping__img-tiny-10.png" alt="" class="shopping__img-tiny-10 tiny absolute" style="top:1149px; left:1420px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/shopping__img-tiny-11.png" alt="" class="shopping__img-tiny-11 tiny absolute" style="top:1211px; left:960px;">
-  </div>
-</section>
-
-<!-- cummunity -->
-<section class="con mx-auto">
-<div class="cummunity w-full relative"style="margin-top:-1px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-bg.png" alt="" class="cummunity__img-bg w-full">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-text.png" alt="" class="cummunity__img-text absolute wow animate__slideInRight" style="top:230px; left:1097px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-talk-1.png" alt="" data-aos="fade-up" data-aos-duration="800" class="cummunity__img-talk-1 absolute" style="top:1937px; left:150px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-talk-2.png" alt="" data-aos="fade-up" data-aos-duration="800" class="cummunity__img-talk-2 absolute" style="top:2050px; left:787px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-talk-3.png" alt="" data-aos="fade-up" data-aos-duration="800" class="cummunity__img-talk-3 absolute" style="top:1788px; left:1252px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-tiny-1.png" alt="" class="cummunity__img-tiny-1 tiny absolute" style="top:85px; left:1750px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-tiny-2.png" alt="" class="cummunity__img-tiny-2 tiny absolute" style="top:158px; left:1710px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-tiny-3.png" alt="" class="cummunity__img-tiny-3 tiny absolute" style="top:433px; left:85.7px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-tiny-4.png" alt="" class="cummunity__img-tiny-4 tiny absolute" style="top:499px; left:155.7px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-tiny-5.png" alt="" class="cummunity__img-tiny-5 tiny absolute" style="top:1301px; left:107.8px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-tiny-6.png" alt="" class="cummunity__img-tiny-6 tiny absolute" style="top:1414.5px; left:9.5px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-tiny-7.png" alt="" class="cummunity__img-tiny-7 tiny absolute" style="top:1125px; left:700px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-tiny-8.png" alt="" class="cummunity__img-tiny-8 tiny absolute" style="top:1348.5px; left:703px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-tiny-9.png" alt="" class="cummunity__img-tiny-9 tiny absolute" style="top:1145px; left:1751.7px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-tiny-10.png" alt="" class="cummunity__img-tiny-10 tiny absolute" style="top:1269px; left:1826px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-tiny-11.png" alt="" class="cummunity__img-tiny-11 tiny absolute" style="top:1897px; left:875.7px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-tiny-12.png" alt="" class="cummunity__img-tiny-12 tiny absolute" style="top:1906px; left:791px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-tiny-13.png" alt="" class="cummunity__img-tiny-13 tiny absolute" style="top:2230.5px; left:1865px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-tiny-14.png" alt="" class="cummunity__img-tiny-14 tiny absolute" style="top:2275px; left:1788.8px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/cummunity__img-tiny-15.png" alt="" class="cummunity__img-tiny-15 tiny absolute" style="top:2346px; left:1809px;">
-  </div>
-</section>
-
-<!-- my page -->
-<section class="con mx-auto">
-<div class="mypage w-full relative overflow-hidden" style="margin-top:-1px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/mypage__img-bg.png" alt="" class="mypage__img-bg w-full">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/mypage__img-line-l.png" alt="" class="mypage__img-line-l absolute" style="top:889px; left:355px; z-index:10;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/mypage__img-line-r.png" alt="" class="mypage__img-line-r absolute" style="top:774px; left:1317px; z-index:10;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/mypage__img-phone-1.png" alt="" data-aos="fade-up" data-aos-duration="3s" class="mypage__img-phone-1 absolute" style="top:500px; left:546px; z-index:5;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/mypage__img-phone-2.png" alt="" data-aos="fade-down" data-aos-duration="3s" class="mypage__img-phone-2 absolute" style="top:250px; left:952px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/mypage__img-tiny-1.png" alt="" class="mypage__img-tiny-1 tiny absolute" style="top:0px; left:431px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/mypage__img-tiny-2.png" alt="" class="mypage__img-tiny-2 tiny absolute" style="top:25px; left:517px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/mypage__img-tiny-3.png" alt="" class="mypage__img-tiny-3 tiny absolute" style="top:125px; left:1618px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/mypage__img-tiny-4.png" alt="" class="mypage__img-tiny-4 tiny absolute" style="top:208px; left:1710px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/mypage__img-tiny-5.png" alt="" class="mypage__img-tiny-5 tiny absolute" style="top:253px; left:1644.5px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/mypage__img-tiny-6.png" alt="" class="mypage__img-tiny-6 tiny absolute" style="top:379px; left:750px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/mypage__img-tiny-7.png" alt="" class="mypage__img-tiny-7 tiny absolute" style="top:410px; left:825px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/mypage__img-tiny-8.png" alt="" class="mypage__img-tiny-8 tiny absolute" style="top:390px; left:621px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/mypage__img-tiny-9.png" alt="" class="mypage__img-tiny-9 tiny absolute" style="top:1310px; left:85px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/mypage__img-tiny-10.png" alt="" class="mypage__img-tiny-10 tiny absolute " style="top:1403px; left:65px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/mypage__img-tiny-11.png" alt="" class="mypage__img-tiny-11 tiny absolute" style="top:1397px; left:1462px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/mypage__img-tiny-12.png" alt="" class="mypage__img-tiny-12 tiny absolute" style="top:1379px; left:1548px;">
-  <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/mypage__img-tiny-13.png" alt="" class="mypage__img-tiny-13 tiny absolute" style="top:1416px; left:1621px;">
-  </div>
-</section>
-
-<!-- end -->
-<section class="con mx-auto">
-  <div class="end w-full relative" style="margin-top:-1px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/end__img-bg.png" alt="" class="end__img-bg">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/end__img-text.png" alt="" class="end__img-text absolute wow backInDown" style="top:628px; left:150px;">
-    <img src="https://cdn.jsdelivr.net/gh/jiyeon-520/portfolio__app_together/docs/image2/end__img-box.png" alt="" class="end__img-box absolute" style="top:0; left:0; z-index:10;">
-  </div>
-</section>
-<script type="text/javascript" src="index.js"></script>
+    <section class="section-group">
+        <section id="main" class="con mx-auto relative" style="height:1000px;">
+          <!-- 상단바 -->
+      <section class="header fixed" style="z-index:400; width:1920px;">
+            <div class="top-bar gothic flex h-full">
+              <div class="logo flex h-full items-center">
+                <a href="#" style="margin-left:68px;"><img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/logo_fff.png" alt="" class="logo-image">
+                  <img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/logo_2323.png" alt="" class="logo-image2 add" style="margin-top:-58.5px; margin-left:1px;">
+                </a>
+                <a href="#main" class="constantia " style="font-size:28px; padding-left:10px; letter-spacing:2px;"><span>FOURSEASONS</span></a>
+              </div>
+              <div class="flex-grow"></div>
+              <nav class="menu h-full flex items-center gothic " style="font-size:20px; margin-right:70px;">
+                <ul class="flex h-full constantia">
+                  <li class="h-full flex"><a href="#" class="px-9 h-full items-center flex "><span>RESERVATION</span></a>
+                        <div class="img-1 absolute" style="top:calc((100% + 40px) + 1px); right:calc(100% + 210px); width:327px; height:249px;"><img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/top_01.png" title="리저베이션.png"></div>
+                    <ul class="gothic" style="margin-top:1px; height:300px;">
+                        <div class="img-1 absolute " style="top:40px; right:calc(100% + 210px); width:327px; height:249px;"><img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/top_01.png" title="리저베이션.png"></div>
+                      <li><a href="sub_01.html" class="block"><span>ROOMS</span></a>
+                      </li>
+                      <li><a href="sub_02.html" class="block"><span>DINNING</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="h-full flex"><a href="#offer" class="px-9 h-full items-center flex"><span>OFFERS</span></a>  <div class="img-1 absolute" style="top:calc((100% + 40px) + 1px); right:calc(100% + 400.8px); width:327px; height:249px;"><img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/top_02.png" title="offer.png"></div>
+                    <ul class="gothic" style="margin-top:1px; height:300px;">
+                      <div class="img-1 absolute " style="top:40px; right:calc(100% + 400.8px); width:327px; height:249px;"><img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/top_02.png" title="offer.png"></div>
+                      <li><a href="#" class="block cursor-default"><span>
+                            PACKAGE
+                          </span></a></li>
+      
+                      <li><a href="#" class="block cursor-default"><span>
+                            EVENT
+                          </span></a></li>
+                    </ul>
+                  </li>
+                  <li class="h-full flex"><a href="#life" class="px-9 h-full items-center flex"><span>LIFE STYLE</span></a>  <div class="img-1 absolute" style="top:calc((100% + 40px) + 1px); right:calc(100% + 537.68px); width:327px; height:249px;"><img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/top_04.png" title="life.png"></div>
+                    <ul class="gothic" style="margin-top:1px; height:300px;">
+                 <div class="img-1 absolute " style="top:40px; right:calc(100% + 537.68px); width:327px; height:249px;"><img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/top_04.png" title=".png"></div>    
+                      <li><a href="#" class="block cursor-default "><span>
+                            POOL
+                          </span></a></li>
+                      <li><a href="#" class="block cursor-default"><span>
+                            SPA
+                          </span></a></li>
+                      <li><a href="#" class="block cursor-default"><span>
+                            WEDDING
+                          </span></a></li>
+                    </ul>
+                  </li>
+                  <li class="h-full flex"><a href="#" class="px-9 h-full items-center flex cursor-default"><span>MEMBERSHIP</span></a>
+                     <div class="img-1 absolute" style="top:calc((100% + 40px) + 1px); right:calc(100% + 702.26px); width:327px; height:249px;"><img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/top_03.png" title="member.png"></div> 
+                    <ul class="gothic " style="margin-top:1px; height:300px;">
+                    <div class="img-1 absolute " style="top:40px; right:calc(100% + 702.26px); width:327px; height:249px;"><img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/top_03.png" title="member.png"></div>
+                      <li><a href="#" class="block cursor-default"><span>
+                            EVENT
+                          </span></a></li>
+                      <li><a href="#" class="block cursor-default"><span>
+                            NEWS
+                          </span></a></li>
+                    </ul>
+                  </li>
+                  <li class="h-full flex"><a href="#" class="px-9 h-full items-center flex cursor-default"><span>MY PAGE</span></a>
+                     <div class="img-1 absolute " style="top:calc((100% + 40px) + 1px); right:calc(100% + 890px); width:327px; height:249px;"><img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/project/mypage.png" title="mypage.png"></div>  
+                    <ul class="gothic " style="margin-top:1px; height:300px;">
+                    <div class="img-1 absolute " style="top:40px; right:calc(100% + 890px); width:327px; height:249px;"><img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/project/mypage.png" title="mypage.png"></div>  
+                      <li><a href="#" class="block cursor-default"><span>
+                            POINT
+                          </span></a></li>
+                      <li><a href="#" class="block cursor-default"><span>
+                            COUPON
+                          </span></a></li>
+                    </ul>
+                  </li>
+                  <li class="h-full flex"><a href="#" class="px-9 h-full items-center flex cursor-default"><span>ABOUT US</span></a>
+                    <div class="img-1 absolute " style="top:calc((100% + 40px) + 1px); right:calc(100% + 1036px); width:327px; height:249px;"><img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/project/about us.png" title="about.png"></div>
+                    <ul class="gothic " style="margin-top:1px; height:300px;">
+                    <div class="img-1 absolute " style="top:40px; right:calc(100% + 1036px); width:327px; height:249px;"><img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/project/about us.png" title="about.png"></div>  
+                      <li><a href="#" class="block cursor-default"><span>
+                            ABOUT US
+                          </span></a></li>
+                      <li><a href="#" class="block cursor-default"><span>
+                            HISTORY
+                          </span></a></li>
+                      <li><a href="#" class="block cursor-default"><span>
+                            AWARDS
+                          </span></a></li>
+                      <li><a href="#" class="block cursor-default"><span>
+                            MAP
+                          </span></a></li>
+                    </ul>
+                  </li>
+                  <div class="filter absolute"></div>
+                </ul>
+              </nav>
+                        <a href="#" class="flex flex-end items-center h-full px-4 text-sm"><span><i class="fa-regular fa-user mr-1"></i>로그인</span></a>
+              <a href="#" class="flex flex-end items-center h-full pl-4 pr-8 text-sm mr-3"><span class="">예약확인</span></a>
+            </div>
+            </div>
+          </section>
+          <!-- main-1 -->
+          <div class="main-1" style="height:1000px;">
+            <img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/main.png" alt="" class="main-1__img absolute" style="top:0; left:0; height:100%; width:100%;">
+            <h1 class="absolute constantia" style="color:#ffffff; font-size:58px; top:502px; left:189px;"><span>ELEGANCE IN THE VERY HEART OF SEOUL</span></h1>
+            <h2 class="absolute gothic" style="color:#ffffff; font-size:22px; top:470px; left:189px;"><span>WELCOME TO FOURSEASONS </span></h2>
+            <div class="absolute gothic" style="width:1186px; height:68px; background-color:none; border:1px solid #ffffff; top:606px; left:189px;">
+            </div>
+            <a href="#">
+              <div class="absolute gothic" style="width:181px; height:66px; background-color:rgba(255,255,255,.1); top:606px; left:1194px;"></div>
+            </a>
+            <div class="absolute text text__small gothic" style="font-size:10px; color:rgba(255,255,255,.5); top:620px; left:214px;"><span>RESERVATION</span></div>
+            <div class="absolute text text__small gothic" style="font-size:10px; color:rgba(255,255,255,.5); top:620px; left:450px;"><span>CHECK IN / OUT</span></div>
+            <div class="absolute text text__small gothic" style="font-size:10px; color:rgba(255,255,255,.5); top:620px; left:948px;"><span>ROOM</span></div>
+            <div class="absolute text text__small gothic" style="font-size:10px; color:rgba(255,255,255,.5); top:620px; left:1035px;"><span>ADULT</span></div>
+            <div class="absolute text text__small gothic" style="font-size:10px; color:rgba(255,255,255,.5); top:620px; left:1117px;"><span>CHILDREN</span></div>
+            <div class="room relative gothic " style="top:607px; left:190px; width:169px; height:67px; background-color:none; cursor:pointer; z-index:30;">
+              <ul class="absolute ul" style="bottom:100%; width:100%; height:201px; background-color:#ffffff; font-size:14px; color:#232323;">
+                <li class="flex items-center justify-center" style="height:67px; width:100%; text-align:center;"><a href="#"><span>ROOM</span></a></li>
+                <li class="flex items-center justify-center" style="height:67px; width:100%; text-align:center;"><a href="#"><span>DINNING</span></a></li>
+                <li class="flex items-center justify-center" style="height:67px; width:100%; text-align:center;"><a href="#"><span>MEMBERSHIP</span></a></li>
+      
+              </ul>
+            </div>
+            <div class="absolute text text__middle gothic" style="font-size:18px; color:rgba(255,255,255,1); top:639px; left:214px;"><a href="#"><span>ROOM</span></a></div>
+            <div class="main__arr-1 absolute" style="top:640px; left:319px;"><a href="#"><img src="https://i.imgur.com/wgTRIy7.png" alt=""></a></div>
+            <div class="absolute line main__line-1" style="top:620px; left:358px;"><img src="https://i.imgur.com/haqkIuh.png" alt=""></div>
+            <div class="relative text text__middle gothic" style="font-size:18px; color:rgba(255,255,255,1); top:540px; left:360px; width:532px; padding-top:30px; cursor:pointer;padding-left:90px;"><span>2022.03.01 화 - 2022.03.03 목</span>
+              <div class="calendar_container absolute flex justify-evenly" style="width:532px; background-color:#ffffff; bottom:96%;left:0; z-index:500;">
+      
+                <button class="left_button inline "> &lt </button>
+                <button class="right_button inline "> > </button>
+                <table class="calendar">
+                  <th class="title1">2022년 3월</th>
+                  <tbody style="margin-top:30px;">
+                    <tr class="week">
+                      <td class="day">일</td>
+                      <td class="day">월</td>
+                      <td class="day">화</td>
+                      <td class="day">수</td>
+                      <td class="day">목</td>
+                      <td class="day">금</td>
+                      <td class="day">토</td>
+                    </tr>
+                    <tr>
+                      <!-- 달력 첫 번째 줄-->
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                    </tr>
+                    <tr>
+                      <!-- 달력 두 번째 줄-->
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                    </tr>
+                    <tr>
+                      <!-- 달력 세 번째 줄-->
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                    </tr>
+                    <tr>
+                      <!-- 달력 네 번째 줄-->
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                    </tr>
+                    <tr>
+                      <!-- 달력 다섯 번째 줄-->
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                    </tr>
+                    <tr>
+                      <!-- 달력 여섯 번째 줄-->
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                      <td class="calendar_days" roll="button"> </td>
+                    </tr>
+                  </tbody>
+                </table>
+      
+              </div>
+            </div>
+      
+            <div class="main__arr-2 absolute" style="top:640px; left:790px;"><a href="#"><img src="https://i.imgur.com/wgTRIy7.png" alt=""></a></div>
+            <div class="absolute main__line-2" style="top:620px; left:890px;"><img src="https://i.imgur.com/qCRhduV.png" alt=""></div>
+            <div class="box-count box-1" style="color:rgba(255,255,255,1); user-select:none;">
+              <span class="box-count__minus absolute" style="top:636px; left:940px; font-size:14px; cursor:pointer;">-</span>
+              <span class="box-count__num absolute" style="font-size:20px; top:631.5px; left:958px;">0</span>
+              <span class="box-count__plus absolute" style="font-size:14px; top:636px; left:980px; cursor:pointer;">+</span>
+            </div>
+            <div class="box-count box-2" style="color:rgba(255,255,255,1); user-select:none;">
+              <span class="box-count__minus absolute" style="top:636px; left:1028px; font-size:14px; cursor:pointer;">-</span>
+              <span class="box-count__num absolute" style="font-size:20px; top:631.5px; left:1046px;">0</span>
+              <span class="box-count__plus absolute" style="font-size:14px; top:636px; left:1068px; cursor:pointer;">+</span>
+            </div>
+            <div class="box-count box-3" style="color:rgba(255,255,255,1);">
+              <span class="box-count__minus absolute" style="top:636px; left:1116px; font-size:14px; cursor:pointer;">-</span>
+              <span class="box-count__num absolute" style="font-size:20px; top:631.5px; left:1134px;">0</span>
+              <span class="box-count__plus absolute" style="font-size:14px; top:636px; left:1156px; cursor:pointer;">+</span>
+            </div>
+            <div class="absolute main__line-3" style="top:606px; left:1194px;"><img src="https://i.imgur.com/uJQ8VyX.png" alt=""></div>
+            <div class="absolute text text__middle" style="top:627px; left:1243px; color:rgba(255,255,255,1); z-index:10; font-size:20px;"><a href="#"><span>SEARCH</span></a></div>
+            <img src="https://i.imgur.com/g1rr4IY.png" alt="" class="absolute main-1__scroll" style="top:900px; left:50%; transform:translateX(-50%);">
+          </div>
+        </section>
+        <!-- main-2 -->
+        <section class="ROOM con mx-auto " style="height:1000px;">
+          <div class="ROOM_title">
+            <h1 style="margin-top:-72px;">ROOM</h1>
+            <hr>
+            <span class="gothic" style="margin-top:-50px;">광화문에 위치한 현대적인 감각의 포시즌스 서울 호텔은 포시즌스만의 서비스를 선보이는 특별한 공간입니다. <br> <br>역사적인 왕궁 유적들 사이 유리와 철조로 지어진 건축물을 품은 서울은 전통적인 느낌이 물씬한 동시에, <br> <br>미래 지향적인 감각이 가득한 역동적인 도시입니다. <br> <br>바닥에서 천장까지 통유리가 설치된 객실에서 밖을 내다보면, 서울의 역동적인 풍경이 한눈에 펼쳐집니다. </span>
+            <div class="bt-container">
+              <a href="#" class="room-button gothic">목록보기 </a>
+              <a href="sub_01.html" class="room-button gothic">예약하기</a>
+            </div>
+          </div>
+          <div class="js-horizontal-collapse  horizontal-collapse" data-item-min-width="180" data-item-max-width="1380">
+            <ul class="horizontal-collapse__inner">
+              <!-- 01 Family__ROOM   -->
+              <li class="js-horizontal-collapse-item  horizontal-collapse__item  horizontal-collapse__item--1" tabindex="0" role="button">
+                <div class="js-horizontal-collapse-item-inner  horizontal-collapse__item-inner">
+                  <div class="horizontal-collapse__inactive-content">
+                    <h2 class="horizontal-collapse__heading">Family Room</h2>
+                  </div>
+                  <div class="horizontal-collapse__active-content">
+                    <h2 class="horizontal-collapse__heading">Family Room</h2>
+                    <p class="horizontal-collapse__body">온 가족을 위한 여유로운 객실 공간과 함께 추가로 제공되는 <br>소파베드, 워크인 클로짓, 대형 레인 샤워, 별도의 스파 욕조를 갖추어 내 집 같은 편안함을 선사합니다.</p>
+                    <a class="horizontal-collapse__link" href="#" target="_top">자세히 보기</a>
+                  </div>
+                </div>
+              </li>
+              <!-- 02 Suite Room   -->
+              <li class="js-horizontal-collapse-item  horizontal-collapse__item  horizontal-collapse__item--2" tabindex="0" role="button">
+                <div class="js-horizontal-collapse-item-inner  horizontal-collapse__item-inner">
+                  <div class="horizontal-collapse__inactive-content">
+                    <h2 class="horizontal-collapse__heading">Suite Room</h2>
+                  </div>
+                  <div class="horizontal-collapse__active-content">
+                    <h2 class="horizontal-collapse__heading">Suite Room</h2>
+                    <p class="horizontal-collapse__body">통유리창으로 가득 들어오는 자연광과 180도로 펼쳐지는 <br>서울의 도심 전망을 배경으로, 업무와 휴식을 위해 완벽한 공간을 제공합니다.</p>
+                    <a class="horizontal-collapse__link" href="#" target="_top">자세히 보기</a>
+                  </div>
+                </div>
+              </li>
+              <!-- 03 Deluxe King   -->
+              <li class="js-horizontal-collapse-item  horizontal-collapse__item  horizontal-collapse__item--3" tabindex="0" role="button">
+                <div class="js-horizontal-collapse-item-inner  horizontal-collapse__item-inner">
+                  <div class="horizontal-collapse__inactive-content">
+                    <h2 class="horizontal-collapse__heading">Deluxe King</h2>
+                  </div>
+                  <div class="horizontal-collapse__active-content">
+                    <h2 class="horizontal-collapse__heading">Deluxe King</h2>
+                    <p class="horizontal-collapse__body">오픈 콘셉트 레이아웃과 독특한 커브형 창으로 산뜻하고 현대적인 인테리어를 선보입니다. <br>바닥에서 천장까지 탁 트인 통유리 창으로 도시와 산이 조각처럼 어우러진 전망을 감상할 수 있습니다.</p>
+                    <a class="horizontal-collapse__link" href="#" target="_top">자세히 보기</a>
+                  </div>
+                </div>
+              </li>
+              <!-- 04 Deluxe Twin   -->
+              <li class="js-horizontal-collapse-item  horizontal-collapse__item  horizontal-collapse__item--4" tabindex="0" role="button">
+                <div class="js-horizontal-collapse-item-inner  horizontal-collapse__item-inner">
+                  <div class="horizontal-collapse__inactive-content">
+                    <h2 class="horizontal-collapse__heading">Deluxe Twin</h2>
+                  </div>
+                  <div class="horizontal-collapse__active-content">
+                    <h2 class="horizontal-collapse__heading">Deluxe Twin</h2>
+                    <p class="horizontal-collapse__body">
+                      서울의 도심 전망을 내려다보는 대리석 바닥의 거실 공간으로 <br>분리된 침실에서 조용하고 평화로운 휴식을 즐기실 수 있습니다.</p>
+                    <a class="horizontal-collapse__link" href="#" target="_top">자세히 보기</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- main-3 -->
+        <section id="offer" class="OFFER con mx-auto pt-10 " style="height:1000px;">
+          <header></header>
+          <span class="title constantia">OFFER</span>
+          <div class="content">
+      
+            <!-- Mong-Friendly -->
+            <div class="offer__card Mong-Friendly">
+              <div class="offer__card__img">
+                <a href="#"><img class="Mong-Friendly-card" src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/project/offer_imge_01.png" alt="Mong-Friendly"></a>
+              </div>
+              <div class="offer__card__text__down ">
+                <span class="card-text gothic">Mong-Friendly</span>
+                <span><i class="fa-solid fa-right-long"></i></span>
+              </div>
+            </div>
+      
+            <!-- 02 FAMILY FESTIVE FUN -->
+            <div class="offer__card  FAMILY FESTIVE FUN">
+              <div class="offer__card__img offer__card__img__down">
+                <a href="#"><img class="FAMILY-card" src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/project/offer_imge_02.png" alt="FAMILY"></a>
+              </div>
+              <div class="offer__card__text__up">
+                <span class="card-text gothic">FAMILY FESTIVE FUN</span>
+                <span><i class="fa-solid fa-right-long"></i></span>
+              </div>
+            </div>
+      
+            <!-- 03 VALENTINE’S DAY -->
+            <div class="offer__card VALENTINE’S DAY ">
+              <div class="offer__card__img">
+                <a href="#"><img class="VALENTINE-card" src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/project/offer_imgae_03.png" alt="VALENTINE"></a>
+              </div>
+              <div class="offer__card__text__down">
+                <span class="card-text gothic">VALENTINE’S DAY</span>
+                <span><i class="fa-solid fa-right-long"></i></span>
+              </div>
+            </div>
+            <!-- 04 BED AND BREAKFAST -->
+            <div class="offer__card BED AND BREAKFAST ">
+              <div class="offer__card__img offer__card__img__down">
+                <a href="#"><img class="BREAKFAST-card" src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/project/offer_image_04.png" alt="BREAKFAST"></a>
+              </div>
+              <div class="offer__card__text__up">
+                <span class="card-text gothic">BED AND BREAKFAST</span>
+                <span><i class="fa-solid fa-right-long"></i></span>
+              </div>
+            </div>
+      
+          </div>
+      
+        </section>
+        <!-- main-4 -->
+        <section class="con mx-auto " style="height:1000px;">
+          <h1 class="ml-36 pt-28 constantia" style="font-size:58px;">DINNING</h1>
+          <div class="swiper-box-1 pt-8">
+            <!-- Slider main container -->
+            <div class="swiper mt-5">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="din-img-1 din-img flex" style="">
+                    <img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/dinning_01.png" alt="">
+                    <div class="txt-2 flex flex-col center relative ml-16" style="justify-content: center; margin-top:-100px;">
+                      <h1 class="constantia" style="font-size:70px;"> Charles . H</h1>
+                      <h2 class="constantia" style="font-size:70px; margin-top:-30px; margin-left:3px;"> Bar</h2>
+                      <h2 class="mt-3 gothic ml-2 text-lg">지하의 비밀 통로를 통해 연결되는
+                        <br>
+                        이국적이고 화려한 매력이 가득한 공간
+                      </h2>
+                      <h3 class="mt-10 gothic ml-64 text-sm" style="cursor:pointer; font-weight:bold;">
+                        예약하기 >
+                      </h3>
+      
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="din-img-2 din-img flex">
+                    <div class="이미지" style="width:840px; height:540px; background-image:url(https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/dinning-02.png);"> </div>
+                    <div class="txt-2 flex flex-col center relative" style="height:540px; justify-content: center; margin-left:50px;">
+                      <h1 class="constantia" style="font-size:70px;"> The Garden</h1>
+                      <h2 class="constantia" style="font-size:70px; margin-top:-30px; margin-left:3px;">Terrace</h2>
+                      <h2 class="mt-3 gothic ml-2 text-lg">서울의 매력적인 도심 전망을 배경으로
+                        <br>
+                        최고급 햄버거와 세계 각국의
+                        <br>
+                        수제 맥주/와인/칵테일을 즐길 수 있는
+                        <br>
+                        야외 테라스
+                      </h2>
+                      <h3 class="mt-10 gothic ml-72 text-sm" style="cursor:pointer; font-weight:bold;">
+                        예약하기 >
+                      </h3>
+      
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="din-img-3 din-img flex">
+                    <div class="이미지" style="width:840px; height:540px; background-image:url(https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/dinning-03.png);"> </div>
+                    <div class="txt-2 flex flex-col center relative" style="height:540px; justify-content: center; margin-left:50px;">
+                      <h1 class="constantia" style="font-size:70px;"> The Market </h1>
+                      <h2 class="constantia" style="font-size:70px; margin-top:-30px; margin-left:3px;">Kitchen</h2>
+                      <h2 class="mt-3 gothic ml-2 text-lg">세계 각국의 요리와 다양한 맛을 <br>생생하게 만날 수 있는 최고 레스토랑</h2>
+                      <h3 class="mt-10 gothic ml-72 text-sm" style="cursor:pointer; font-weight:bold;">
+                        예약하기 >
+                      </h3>
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="relative" style="right:-1225px; top:-400px;">
+      
+              <div class="swiper-button-next absolute" style="left:3%; padding:20px;"></div>
+              <div class="swiper-button-prev absolute " style="left:0; padding:20px;"></div>
+            </div>
+          </div>
+        </section>
+        <!-- main-5 -->
+        <section id="life" class="con mx-auto  relative" style="height:1000px;">
+          <h1 class="ml-36 pt-28 constantia" style="font-size:58px;">LIFE STYLE</h1>
+          <h2 class="gothic absolute" style="top:250px; left:145px; font-size:18px; line-height:15px;">포시즌스 서울 에서는 <br><br>고객의 건강한 라이프스타일을 위해 <br><br>필요한 모든 서비스를 언제든지 제공합니다.</h2>
+          <div class="swiper-box-2 mt-12">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="pool-img flex" style="">
+                    <img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/life_01.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="fit-img flex" style="">
+                    <img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/life_02.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="spa-img flex" style="">
+                    <img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/life_03.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="wed-img flex" style="">
+                    <img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/life_04.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="button-container relative flex" style="margin-left:160px; margin-top:-50px;">
+            <button class="prev absolute " style="left:-15px; padding:10px;">
+              <input class="" type="image" id="image" alt="Login" src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/r-bt.png">
+            </button>
+            <button class="next absolute" style="left:30px; padding:10px;">
+              <input type="image" id="image" alt="Login" src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/l-bt.png">
+      
+            </button>
+          </div>
+          </div>
+        </section>
+        <!-- 푸터 -->
+        <section class="con mx-auto" style="height:200px;">
+          <div class="footer w-full h-full relative" style="background-color:#232323; color:#ffffff;">
+            <div class="logo constantia absolute" style="font-size:22px; top:80.94px; left:309px;">
+              <a href="#"><span>FOURSEASONS</span></a>
+            </div>
+            <div class="p1 gothic absolute" style="font-size:14px; top:85.66px; left:604px;">
+              <a href="#" class="mr-6"><span>사이트맵</span></a>
+              <a href="#" class="mr-6"><span>고객센터</span></a>
+              <a href="#" class="mr-6"><span>이용약관</span></a>
+              <a href="#" class="mr-6"><span>멤버십 이용약관</span></a>
+              <a href="#" class="mr-6"><span>금액권 및 제품교환권 이용약관</span></a>
+              <a href="#"><span>개인정보처리방침</span></a>
+            </div>
+            <div class="p2 gothic absolute" style="font-size:14px; top:106px; left:604px;">
+              <a href="#" class="mr-6"><span>영상정보처리기기운영·관리방침</span></a>
+              <a href="#"><span>이메일무단수집금지</span></a>
+            </div>
+            <div class="p3 gothic absolute" style="font-size:12px; color:#bababa; top:134.4px; left:604px;">
+              <a href="#"><span>서울 종로구 새문안로 97 (당주동, 우편번호 03183)</span></a>
+              <br>
+              <a href="#"><span>2022 fourseasons ALL rights reserved </span></a>
+            </div>
+            <div class="icon">
+              <a href="#" class="absolute" style="top:84.75px; left:1475px;"><img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/ch.png" alt="" class=""></a>
+              <a href="#" class="absolute" style="top:84.75px; left:1525px;"><img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/sns.png" alt=""></a>
+              <a href="#" class="absolute" style="top:84.75px; left:1575px;"><img src="https://cdn.jsdelivr.net/gh/seoungmohwa/N-nanda-img/webimg/sns_01.png" alt=""></a>
+            </div>
+          </div>
+        </section>
+      </section>
 </body>
 </html>
